@@ -9,7 +9,10 @@ QuartZChatbot is a Spring Boot–based chatbot application that provides secure 
 * User authentication with encrypted passwords (BCrypt)
 * Individual chat history for each user
 * Persistent storage using MySQL
-* AI-based response generation using Gemini API
+* AI-based response generation using Google Gemini API
+* Context reconstruction for maintaining conversational continuity
+* Session-based message handling with history-aware response generation
+* Jump-to-message navigation for quick access within chat history
 * Layered architecture (Controller, Service, Repository)
 * Simple and responsive web interface
 
@@ -102,10 +105,21 @@ Or run using:
 
 ---
 
+## Workflow
+
+1. User signs up or logs in securely
+2. Each user interacts with the chatbot independently
+3. Messages are processed and sent to the Gemini API
+4. Context reconstruction ensures continuity across messages
+5. Responses are stored and linked to the user
+6. Users can navigate chat history using jump-to-message functionality
+
+---
+
 ## Contributors
 
-* Gorang Giri
-* Bhoomika Gupta
+* Gorang Giri 
+* Bhoomika Gupta 
 
 ---
 
