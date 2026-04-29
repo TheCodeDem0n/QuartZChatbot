@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register | QuartZ Bot</title>
+  <link rel="stylesheet" href="register.css" />
+
+</head>
+<body>
+<script src="register.js"></script>
+  <form id="registerForm" onsubmit="event.preventDefault(); registerUser();">
+    <h2>Create Account</h2>
+    <input type="text" id="regUsername" placeholder="Enter Username" required />
+    <input type="password" id="regPassword" placeholder="Enter Password" required />
+    <button type="submit" class="btn">Register</button>
+    <p>
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+  </form>
+</body>
+</html>
